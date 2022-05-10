@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    width: 800px;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+}
+
+.post{
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .post-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+.post-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+.post-exit {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+.post-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+.post-enter-active, .post-exit-active {
+    transition: opacity 500ms, transform 500ms;
+  } */
+
+.post-enter {
+    opacity: 0;
+  }
+.post-enter-active {
+    opacity: 1;
+    transition: opacity 400ms ease-in;
+  }
+.post-exit {
+    opacity: 1;
+  }
+.post-exit-active {
+    opacity: 0;
+    transition: opacity 450ms ease-in;
+  }
